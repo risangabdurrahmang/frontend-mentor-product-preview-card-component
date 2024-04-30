@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Quicksand:wght@500;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: white;
+  max-width: 330px;
+  margin: 1rem 0;
+}
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.content-description {
+  margin: 1.2rem;
+  height: 60%;
+}
+.content-description h2 {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.content-description h1 {
+  font-family: "Fraunces";
+  line-height: 2rem;
+  margin-bottom: 14px;
+}
+.content-description p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.3rem;
+  margin-bottom: 12px;
+  font-family: "Montserrat";
+}
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fraunces";
+}
+.old-price {
+  font-size: 15px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.btn {
+  width: 100%;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+@media only screen and (min-width: 550px) {
+  .content {
+    flex-direction: row;
+    max-width: 600px;
+    margin: 0 1rem;
+  }
+  .content-image {
+    width: 50%;
+  }
+  .content-image img {
+    content: url("./images/image-product-desktop.jpg");
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .content-description {
+    width: 50%;
+    padding: 1rem;
+  }
+}
