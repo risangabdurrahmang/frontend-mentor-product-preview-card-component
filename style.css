@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Quicksand:wght@500;700&display=swap");
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +31,11 @@ body {
 }
 .content-description {
   margin: 1.2rem;
-  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  height: auto;
 }
 .content-description h2 {
   font-family: "Montserrat";
@@ -91,6 +88,15 @@ body {
   cursor: pointer;
   border: none;
 }
+footer {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
 @media only screen and (min-width: 550px) {
   .content {
     flex-direction: row;
@@ -108,5 +114,9 @@ body {
   .content-description {
     width: 50%;
     padding: 1rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 1em;
   }
 }
